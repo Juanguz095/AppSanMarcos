@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">San Marcos Admission</string>
+
+    <!-- Navigation Menu -->
+    <string name="menu_inicio">Home</string>
+    <string name="menu_quienes_somos">About us</string>
+    <string name="menu_servicios">Majors and Modalities</string>
+    <string name="menu_localizar">Locate</string>
+    <string name="menu_noticias">News</string>
+    <string name="menu_redes_sociales">Social networks</string>
+    <string name="menu_central_telefonica">Telephone central</string>
+    <string name="menu_configuracion">Settings</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_cronograma">Schedule</string>
+    <string name="menu_registro">Applicant Registration</string>
+
+    <!-- Registro Screen -->
+    <string name="registro_title">Enrollment Form</string>
+    <string name="lbl_nombre">Full Name</string>
+    <string name="lbl_dni">ID / Passport</string>
+    <string name="lbl_email">Email Address</string>
+    <string name="lbl_carrera">Select Major</string>
+    <string name="btn_enviar_registro">Submit Registration</string>
+    <string name="msg_registro_exitoso">Registration submitted successfully! Check your email.</string>
+    <string name="error_campos_vacios">Please complete all fields.</string>
+
+    <!-- Buttons and Search -->
+    <string name="btn_inscribirse">Enroll Now</string>
+    <string name="btn_whatsapp">Chat via WhatsApp</string>
+    <string name="search_hint">Search major or modality…</string>
+    <string name="faq_title">Frequently Asked Questions</string>
+    <string name="cronograma_title">Important Dates</string>
+
+    <!-- Inicio Screen -->
+    <string name="welcome_title">San Marcos Admission</string>
+    <string name="welcome_subtitle">Your future begins at the Dean of America.</string>
+    <string name="section_quick_access">Quick Access</string>
+    <string name="section_featured">Admission Highlights</string>
+    <string name="btn_help">Help</string>
+    <string name="btn_favorites">Favorites</string>
+    <string name="msg_loading">Loading information…</string>
+    <string name="msg_error">An error occurred while loading data.</string>
+    <string name="msg_empty">No information available at this time.</string>
+    <string name="btn_retry">Retry</string>
+
+    <!-- Details -->
+    <string name="lbl_duracion">Duration:</string>
+    <string name="lbl_perfil">Graduate Profile:</string>
+    <string name="btn_ver_plan">View Curriculum</string>
+
+    <!-- Configuración -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_spanish">Spanish</string>
+    <string name="lang_english">English</string>
+    <string name="dialog_select_language">Select Language</string>
+</resources>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Admisión San Marcos</string>
+
+    <!-- Menú de Navegación -->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_quienes_somos">Quiénes somos</string>
+    <string name="menu_servicios">Carreras y Modalidades</string>
+    <string name="menu_localizar">Localizar</string>
+    <string name="menu_noticias">Noticias</string>
+    <string name="menu_redes_sociales">Redes sociales</string>
+    <string name="menu_central_telefonica">Central telefónica</string>
+    <string name="menu_configuracion">Configuración</string>
+    <string name="menu_faq">Preguntas Frecuentes</string>
+    <string name="menu_cronograma">Cronograma</string>
+    <string name="menu_registro">Registro de Postulante</string>
+
+    <!-- Registro Screen -->
+    <string name="registro_title">Formulario de Inscripción</string>
+    <string name="lbl_nombre">Nombre Completo</string>
+    <string name="lbl_dni">DNI / Pasaporte</string>
+    <string name="lbl_email">Correo Electrónico</string>
+    <string name="lbl_carrera">Seleccionar Carrera</string>
+    <string name="btn_enviar_registro">Enviar Registro</string>
+    <string name="msg_registro_exitoso">¡Registro enviado con éxito! Revisa tu correo.</string>
+    <string name="error_campos_vacios">Por favor, completa todos los campos.</string>
+
+    <!-- Botones y Búsqueda -->
+    <string name="btn_inscribirse">Inscribirse Ahora</string>
+    <string name="btn_whatsapp">Consultar por WhatsApp</string>
+    <string name="search_hint">Buscar carrera o modalidad…</string>
+    <string name="faq_title">Dudas Frecuentes</string>
+    <string name="cronograma_title">Fechas Importantes</string>
+
+    <!-- Inicio Screen -->
+    <string name="welcome_title">Admisión UNMSM</string>
+    <string name="welcome_subtitle">Tu futuro comienza en la Decana de América.</string>
+    <string name="section_quick_access">Accesos Rápidos</string>
+    <string name="section_featured">Destacados de Admisión</string>
+    <string name="btn_help">Ayuda</string>
+    <string name="btn_favorites">Favoritos</string>
+    <string name="msg_loading">Cargando información…</string>
+    <string name="msg_error">Ocurrió un error al cargar los datos.</string>
+    <string name="msg_empty">No hay información disponible en este momento.</string>
+    <string name="btn_retry">Reintentar</string>
+
+    <!-- Detalles -->
+    <string name="lbl_duracion">Duración:</string>
+    <string name="lbl_perfil">Perfil del Egresado:</string>
+    <string name="btn_ver_plan">Ver Plan de Estudios</string>
+
+    <!-- Configuración -->
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_dark_mode">Modo Oscuro</string>
+    <string name="settings_language">Idioma</string>
+    <string name="lang_spanish">Español</string>
+    <string name="lang_english">Inglés</string>
+    <string name="dialog_select_language">Seleccionar Idioma</string>
+</resources>
