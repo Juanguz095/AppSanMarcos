@@ -50,7 +50,7 @@ fun CarreraDetailScreen(
                 },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Volver")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(id = R.string.content_desc_volver))
                     }
                 }
             )
@@ -94,7 +94,7 @@ fun CarreraDetailScreen(
                     shape = RoundedCornerShape(8.dp)
                 ) {
                     Text(
-                        text = if (isModalidad) "Modalidad de Admisión" else "Carrera Universitaria",
+                        text = if (isModalidad) stringResource(id = R.string.modalidad_admision_tag) else stringResource(id = R.string.carrera_universitaria_tag),
                         modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
                         style = MaterialTheme.typography.labelLarge,
                         fontWeight = FontWeight.SemiBold
@@ -110,7 +110,7 @@ fun CarreraDetailScreen(
                 }
 
                 Text(
-                    text = if (isModalidad) "Descripción y Requisitos:" else stringResource(id = R.string.lbl_perfil),
+                    text = if (isModalidad) stringResource(id = R.string.descripcion_requisitos) else stringResource(id = R.string.lbl_perfil),
                     style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.Bold
                 )
@@ -137,7 +137,7 @@ fun CarreraDetailScreen(
                         Icon(Icons.Default.AppRegistration, contentDescription = null)
                         Spacer(modifier = Modifier.width(8.dp))
                         Text(
-                            text = "Inscribirse en ${it.name}",
+                            text = stringResource(id = R.string.btn_inscribirse),
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.SemiBold
                         )

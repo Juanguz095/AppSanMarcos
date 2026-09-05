@@ -86,7 +86,7 @@ fun InicioContent(
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "Inscripción y Modalidades 2027-I",
+                    text = stringResource(id = R.string.btn_inscripcion_modalidades),
                     fontWeight = FontWeight.Bold,
                     style = MaterialTheme.typography.labelLarge.copy(fontSize = 13.5.sp),
                     maxLines = 1
@@ -109,7 +109,7 @@ fun InicioContent(
 
         item {
             Text(
-                text = "Comunicados y Novedades",
+                text = stringResource(id = R.string.section_comunicados),
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.primary
@@ -224,8 +224,8 @@ fun QuickActions(onNavigate: (String) -> Unit) {
             QuickActionItem(
                 modifier = Modifier.weight(1f),
                 icon = Icons.Default.CalendarMonth,
-                title = "Cronograma",
-                subtitle = "Fechas clave",
+                title = stringResource(id = R.string.quick_cronograma),
+                subtitle = stringResource(id = R.string.quick_cronograma_subtitle),
                 iconTint = MaterialTheme.colorScheme.primary,
                 containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f),
                 onClick = { onNavigate(Screen.Cronograma.route) }
@@ -234,8 +234,8 @@ fun QuickActions(onNavigate: (String) -> Unit) {
             QuickActionItem(
                 modifier = Modifier.weight(1f),
                 icon = Icons.Default.School,
-                title = "Carreras",
-                subtitle = "Catálogo 2027",
+                title = stringResource(id = R.string.quick_carreras),
+                subtitle = stringResource(id = R.string.quick_carreras_subtitle),
                 iconTint = MaterialTheme.colorScheme.secondary,
                 containerColor = MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.5f),
                 onClick = { onNavigate(Screen.Servicios.route) }
@@ -249,8 +249,8 @@ fun QuickActions(onNavigate: (String) -> Unit) {
             QuickActionItem(
                 modifier = Modifier.weight(1f),
                 icon = Icons.Default.LocationOn,
-                title = "Sedes UNMSM",
-                subtitle = "Ubicación mapa",
+                title = stringResource(id = R.string.quick_sedes),
+                subtitle = stringResource(id = R.string.quick_sedes_subtitle),
                 iconTint = Color(0xFFC05621),
                 containerColor = Color(0xFFFEEBC8).copy(alpha = 0.6f),
                 onClick = { onNavigate(Screen.Localizar.route) }
@@ -259,8 +259,8 @@ fun QuickActions(onNavigate: (String) -> Unit) {
             QuickActionItem(
                 modifier = Modifier.weight(1f),
                 icon = Icons.AutoMirrored.Filled.HelpCenter,
-                title = "Ayuda y FAQ",
-                subtitle = "Preguntas guía",
+                title = stringResource(id = R.string.quick_faq),
+                subtitle = stringResource(id = R.string.quick_faq_subtitle),
                 iconTint = Color(0xFF2B6CB0),
                 containerColor = Color(0xFFBEE3F8).copy(alpha = 0.6f),
                 onClick = { onNavigate(Screen.Faq.route) }
@@ -281,7 +281,7 @@ fun QuickActionItem(
 ) {
     Card(
         onClick = onClick,
-        modifier = modifier.height(68.dp),
+        modifier = modifier,
         shape = RoundedCornerShape(14.dp),
         colors = CardDefaults.cardColors(containerColor = containerColor)
     ) {

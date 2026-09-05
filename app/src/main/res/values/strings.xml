@@ -23,6 +23,10 @@
     <string name="btn_enviar_registro">Enviar Registro</string>
     <string name="msg_registro_exitoso">¡Registro enviado con éxito! Revisa tu correo.</string>
     <string name="error_campos_vacios">Por favor, completa todos los campos.</string>
+    <string name="error_dni_longitud">El DNI debe tener 8 dígitos</string>
+    <string name="dni_digit_count">%1$d/8 dígitos</string>
+    <string name="modalidad_admision">Modalidad de Admisión</string>
+    <string name="carrera_postular">Carrera a Postular</string>
 
     <!-- Botones y Búsqueda -->
     <string name="btn_inscribirse">Inscribirse Ahora</string>
@@ -43,10 +47,36 @@
     <string name="msg_empty">No hay información disponible en este momento.</string>
     <string name="btn_retry">Reintentar</string>
 
+    <!-- Inicio Screen - Hardcoded strings -->
+    <string name="btn_inscripcion_modalidades">Inscripción y Modalidades 2027-I</string>
+    <string name="section_comunicados">Comunicados y Novedades</string>
+    <string name="quick_cronograma">Cronograma</string>
+    <string name="quick_cronograma_subtitle">Fechas clave</string>
+    <string name="quick_carreras">Carreras</string>
+    <string name="quick_carreras_subtitle">Catálogo 2027</string>
+    <string name="quick_sedes">Sedes UNMSM</string>
+    <string name="quick_sedes_subtitle">Ubicación mapa</string>
+    <string name="quick_faq">Ayuda y FAQ</string>
+    <string name="quick_faq_subtitle">Preguntas guía</string>
+
     <!-- Detalles -->
     <string name="lbl_duracion">Duración:</string>
     <string name="lbl_perfil">Perfil del Egresado:</string>
     <string name="btn_ver_plan">Ver Plan de Estudios</string>
+
+    <!-- Carrera Detail -->
+    <string name="modalidad_admision_tag">Modalidad de Admisión</string>
+    <string name="carrera_universitaria_tag">Carrera Universitaria</string>
+    <string name="descripcion_requisitos">Descripción y Requisitos:</string>
+
+    <!-- Servicios Screen -->
+    <string name="tab_modalidades">Modalidades de Admisión</string>
+    <string name="tab_carreras">Carreras Profesionales</string>
+    <string name="medios_ingreso_title">Medios de Ingreso a la UNMSM</string>
+    <string name="medios_ingreso_subtitle">Selecciona la modalidad para ver requisitos e inscribirte al examen.</string>
+    <string name="ver_detalles_inscribirse">Ver detalles e inscribirse</string>
+    <string name="ver_perfil_academico">Ver perfil académico →</string>
+    <string name="buscar_carrera_hint">Buscar carrera (Medicina, Sistemas, Derecho...)</string>
 
     <!-- Configuración -->
     <string name="settings_title">Ajustes</string>
@@ -55,4 +85,36 @@
     <string name="lang_spanish">Español</string>
     <string name="lang_english">Inglés</string>
     <string name="dialog_select_language">Seleccionar Idioma</string>
+    <string name="btn_cerrar">Cerrar</string>
+
+    <!-- Quiénes Somos -->
+    <string name="nuestra_identidad">Nuestra Identidad</string>
+    <string name="section_mision">Misión</string>
+    <string name="section_vision">Visión</string>
+    <string name="section_historia">Nuestra Historia</string>
+
+    <!-- Redes Sociales -->
+    <string name="redes_title">Conéctate con nosotros</string>
+
+    <!-- Central Telefónica -->
+    <string name="directorio_title">Directorio Telefónico</string>
+    <string name="content_desc_enviar_correo">Enviar Correo</string>
+    <string name="content_desc_llamar">Llamar</string>
+
+    <!-- Localizar -->
+    <string name="sedes_title">Sedes UNMSM</string>
+    <string name="btn_abrir_maps">Abrir en Google Maps</string>
+
+    <!-- Noticias -->
+    <string name="btn_leer_mas">Leer más</string>
+    <string name="noticia_title">Noticia</string>
+    <string name="info_adicional_noticia">Para más información, los postulantes pueden acercarse a la oficina central de admisión o comunicarse a través de los canales oficiales habilitados.</string>
+
+    <!-- Navegación -->
+    <string name="content_desc_menu">Menú</string>
+    <string name="content_desc_volver">Volver</string>
+
+    <!-- Errores y estados -->
+    <string name="inscripcion_exitosa">¡Inscripción Exitosa!</string>
+    <string name="btn_ok">OK</string>
 </resources>

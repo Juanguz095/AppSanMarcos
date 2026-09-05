@@ -50,7 +50,7 @@ fun RegistroScreen(
                     title = { Text(stringResource(id = R.string.registro_title)) },
                     navigationIcon = {
                         IconButton(onClick = { onBackClick() }) {
-                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Volver")
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(id = R.string.content_desc_volver))
                         }
                     }
                 )
@@ -89,7 +89,14 @@ fun RegistroScreen(
                 label = { Text(stringResource(id = R.string.lbl_dni)) },
                 modifier = Modifier.fillMaxWidth(),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
-                singleLine = true
+                singleLine = true,
+                supportingText = {
+                    Text(
+                        text = stringResource(id = R.string.dni_digit_count, dni.length),
+                        style = MaterialTheme.typography.bodySmall
+                    )
+                },
+                isError = dni.isNotEmpty() && dni.length < 8
             )
 
             OutlinedTextField(
@@ -107,17 +114,17 @@ fun RegistroScreen(
                 onExpandedChange = { expandedModalidad = !expandedModalidad },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                OutlinedTextField(
-                    value = modalidad,
-                    onValueChange = {},
-                    readOnly = true,
-                    label = { Text("Modalidad de Admisión") },
-                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedModalidad) },
-                    colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
-                    modifier = Modifier
-                        .menuAnchor()
-                        .fillMaxWidth()
-                )
+            OutlinedTextField(
+                value = modalidad,
+                onValueChange = {},
+                readOnly = true,
+                label = { Text(stringResource(id = R.string.modalidad_admision)) },
+                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedModalidad) },
+                colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
+                modifier = Modifier
+                    .menuAnchor()
+                    .fillMaxWidth()
+            )
 
                 ExposedDropdownMenu(
                     expanded = expandedModalidad,
@@ -142,17 +149,17 @@ fun RegistroScreen(
                 onExpandedChange = { expandedCarrera = !expandedCarrera },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                OutlinedTextField(
-                    value = carreraSeleccionada,
-                    onValueChange = {},
-                    readOnly = true,
-                    label = { Text("Carrera a Postular") },
-                    trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCarrera) },
-                    colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
-                    modifier = Modifier
-                        .menuAnchor()
-                        .fillMaxWidth()
-                )
+            OutlinedTextField(
+                value = carreraSeleccionada,
+                onValueChange = {},
+                readOnly = true,
+                label = { Text(stringResource(id = R.string.carrera_postular)) },
+                trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = expandedCarrera) },
+                colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors(),
+                modifier = Modifier
+                    .menuAnchor()
+                    .fillMaxWidth()
+            )
 
                 ExposedDropdownMenu(
                     expanded = expandedCarrera,
@@ -199,10 +206,10 @@ fun RegistroScreen(
                                 viewModel.resetState()
                                 onBackClick?.invoke()
                             }) {
-                                Text("OK")
+                                Text(stringResource(id = R.string.btn_ok))
                             }
                         },
-                        title = { Text("¡Inscripción Exitosa!") },
+                        title = { Text(stringResource(id = R.string.inscripcion_exitosa)) },
                         text = { Text(stringResource(id = R.string.msg_registro_exitoso)) }
                     )
                 }

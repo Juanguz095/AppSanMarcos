@@ -36,7 +36,7 @@ fun CentralTelefonicaScreen(viewModel: CentralTelefonicaViewModel = viewModel())
             .padding(16.dp)
     ) {
         Text(
-            text = "Directorio Telefónico",
+            text = stringResource(id = R.string.directorio_title),
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 16.dp)
@@ -116,7 +116,7 @@ fun ContactItem(
                     ) {
                         Icon(
                             imageVector = Icons.Default.Email,
-                            contentDescription = "Enviar Correo",
+                            contentDescription = stringResource(id = R.string.content_desc_enviar_correo),
                             tint = MaterialTheme.colorScheme.secondary
                         )
                     }
@@ -128,11 +128,11 @@ fun ContactItem(
                         containerColor = MaterialTheme.colorScheme.primaryContainer
                     )
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.Phone,
-                        contentDescription = "Llamar",
-                        tint = MaterialTheme.colorScheme.primary
-                    )
+                Icon(
+                    imageVector = Icons.Default.Phone,
+                    contentDescription = stringResource(id = R.string.content_desc_llamar),
+                    tint = MaterialTheme.colorScheme.primary
+                )
                 }
             }
         }

@@ -14,9 +14,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.UniversidadSanMarcos.catalogo.R
 import com.UniversidadSanMarcos.catalogo.util.SafeIntentLauncher
 import com.UniversidadSanMarcos.catalogo.data.model.SocialNetwork
 import com.UniversidadSanMarcos.catalogo.viewmodel.RedesSocialesViewModel
@@ -32,7 +34,7 @@ fun RedesSocialesScreen(viewModel: RedesSocialesViewModel = viewModel()) {
             .padding(16.dp)
     ) {
         Text(
-            text = "Conéctate con nosotros",
+            text = stringResource(id = R.string.redes_title),
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 16.dp)

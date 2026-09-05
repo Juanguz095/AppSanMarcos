@@ -12,11 +12,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.UniversidadSanMarcos.catalogo.R
 import com.UniversidadSanMarcos.catalogo.viewmodel.NoticiasViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -34,14 +36,14 @@ fun NoticiaDetailScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = noticia?.title ?: "Noticia",
+                        text = noticia?.title ?: stringResource(id = R.string.noticia_title),
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
                 },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Volver")
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = stringResource(id = R.string.content_desc_volver))
                     }
                 }
             )
@@ -86,7 +88,7 @@ fun NoticiaDetailScreen(
                 )
 
                 Text(
-                    text = "Para más información, los postulantes pueden acercarse a la oficina central de admisión o comunicarse a través de los canales oficiales habilitados.",
+                    text = stringResource(id = R.string.info_adicional_noticia),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

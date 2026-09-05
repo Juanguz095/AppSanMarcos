@@ -142,7 +142,7 @@ fun ConfiguracionScreen(themeViewModel: ThemeViewModel = viewModel()) {
             },
             confirmButton = {
                 TextButton(onClick = { showLanguageDialog = false }) {
-                    Text("Cerrar")
+                    Text(stringResource(id = R.string.btn_cerrar))
                 }
             }
         )

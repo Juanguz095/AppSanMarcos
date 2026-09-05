@@ -11,9 +11,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.UniversidadSanMarcos.catalogo.R
 import com.UniversidadSanMarcos.catalogo.data.model.NewsItem
 import com.UniversidadSanMarcos.catalogo.viewmodel.NoticiasViewModel
 
@@ -72,7 +74,7 @@ fun NewsCard(news: NewsItem, onReadMore: () -> Unit) {
                 onClick = onReadMore,
                 modifier = Modifier.align(Alignment.End)
             ) {
-                Text("Leer más")
+                Text(stringResource(id = R.string.btn_leer_mas))
             }
         }
     }

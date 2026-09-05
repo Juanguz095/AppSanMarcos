@@ -14,10 +14,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.UniversidadSanMarcos.catalogo.R
 import com.UniversidadSanMarcos.catalogo.viewmodel.QuienesSomosViewModel
 
 @Composable
@@ -33,16 +35,16 @@ fun QuienesSomosScreen(viewModel: QuienesSomosViewModel = viewModel()) {
         verticalArrangement = Arrangement.spacedBy(24.dp)
     ) {
         Text(
-            text = "Nuestra Identidad",
+            text = stringResource(id = R.string.nuestra_identidad),
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary
         )
 
         info?.let {
-            InfoSection(title = "Misión", content = it.mission, icon = Icons.Default.WorkspacePremium)
-            InfoSection(title = "Visión", content = it.vision, icon = Icons.Default.Visibility)
-            InfoSection(title = "Nuestra Historia", content = it.history, icon = Icons.Default.History)
+            InfoSection(title = stringResource(id = R.string.section_mision), content = it.mission, icon = Icons.Default.WorkspacePremium)
+            InfoSection(title = stringResource(id = R.string.section_vision), content = it.vision, icon = Icons.Default.Visibility)
+            InfoSection(title = stringResource(id = R.string.section_historia), content = it.history, icon = Icons.Default.History)
         }
     }
 }

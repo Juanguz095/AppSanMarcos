@@ -39,7 +39,7 @@ fun ServiciosScreen(
     val searchQuery by viewModel.searchQuery.collectAsState()
 
     var selectedTabIndex by remember { mutableIntStateOf(0) }
-    val tabs = listOf("Modalidades de Admisión", "Carreras Profesionales")
+    val tabs = listOf(stringResource(id = R.string.tab_modalidades), stringResource(id = R.string.tab_carreras))
 
     val modalidades = remember(products) {
         products.filter { it.category.contains("Modalidad", ignoreCase = true) }
@@ -101,13 +101,13 @@ fun ServiciosScreen(
                                 Spacer(modifier = Modifier.width(12.dp))
                                 Column {
                                     Text(
-                                        text = "Medios de Ingreso a la UNMSM",
+                                        text = stringResource(id = R.string.medios_ingreso_title),
                                         style = MaterialTheme.typography.titleMedium,
                                         fontWeight = FontWeight.Bold,
                                         color = MaterialTheme.colorScheme.onPrimaryContainer
                                     )
                                     Text(
-                                        text = "Selecciona la modalidad para ver requisitos e inscribirte al examen.",
+                                        text = stringResource(id = R.string.medios_ingreso_subtitle),
                                         style = MaterialTheme.typography.bodySmall,
                                         color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.8f)
                                     )
@@ -120,7 +120,7 @@ fun ServiciosScreen(
                         ModalidadCard(
                             modalidad = modalidad,
                             onClick = { onCarreraClick(modalidad.id) },
-                            onInscribirClick = { onModalidadInscribirClick(modalidad.name) }
+                            onInscribirClick = { onCarreraClick(modalidad.id) }
                         )
                     }
                 }
@@ -134,7 +134,7 @@ fun ServiciosScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .padding(horizontal = 16.dp, vertical = 12.dp),
-                        placeholder = { Text("Buscar carrera (Medicina, Sistemas, Derecho...)") },
+                        placeholder = { Text(stringResource(id = R.string.buscar_carrera_hint)) },
                         leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
                         singleLine = true,
                         shape = RoundedCornerShape(12.dp),
@@ -228,34 +228,18 @@ fun ModalidadCard(
 
             Spacer(modifier = Modifier.height(14.dp))
 
-            Row(
+            Button(
+                onClick = onClick,
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
+                shape = RoundedCornerShape(8.dp)
             ) {
-                TextButton(
-                    onClick = onClick,
-                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp)
-                ) {
-                    Text(
-                        text = "Ver detalles",
-                        style = MaterialTheme.typography.labelMedium
-                    )
-                    Spacer(modifier = Modifier.width(2.dp))
-                    Icon(Icons.Default.ChevronRight, contentDescription = null, modifier = Modifier.size(14.dp))
-                }
-
-                Button(
-                    onClick = onInscribirClick,
-                    shape = RoundedCornerShape(8.dp),
-                    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 6.dp)
-                ) {
-                    Text(
-                        text = "Inscribirse",
-                        style = MaterialTheme.typography.labelMedium.copy(fontSize = 12.sp),
-                        maxLines = 1
-                    )
-                }
+                Text(
+                    text = "Ver detalles e inscribirse",
+                    style = MaterialTheme.typography.labelMedium.copy(fontSize = 12.sp),
+                    maxLines = 1
+                )
+                Spacer(modifier = Modifier.width(4.dp))
+                Icon(Icons.Default.ChevronRight, contentDescription = null, modifier = Modifier.size(14.dp))
             }
         }
     }
@@ -317,14 +301,14 @@ fun CarreraCard(
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(110.dp)
+                    .height(100.dp)
                     .background(Brush.linearGradient(gradientColors)),
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
                     imageVector = icon,
                     contentDescription = null,
-                    modifier = Modifier.size(46.dp),
+                    modifier = Modifier.size(42.dp),
                     tint = MaterialTheme.colorScheme.primary
                 )
             }
@@ -354,7 +338,7 @@ fun CarreraCard(
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = "Ver perfil académico →",
+                    text = stringResource(id = R.string.ver_perfil_academico),
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.primary,
                     fontWeight = FontWeight.SemiBold

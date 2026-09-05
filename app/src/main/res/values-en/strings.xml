@@ -3,18 +3,18 @@
 
     <!-- Navigation Menu -->
     <string name="menu_inicio">Home</string>
-    <string name="menu_quienes_somos">About us</string>
+    <string name="menu_quienes_somos">About Us</string>
     <string name="menu_servicios">Majors and Modalities</string>
     <string name="menu_localizar">Locate</string>
     <string name="menu_noticias">News</string>
-    <string name="menu_redes_sociales">Social networks</string>
-    <string name="menu_central_telefonica">Telephone central</string>
+    <string name="menu_redes_sociales">Social Networks</string>
+    <string name="menu_central_telefonica">Phone Directory</string>
     <string name="menu_configuracion">Settings</string>
     <string name="menu_faq">FAQ</string>
     <string name="menu_cronograma">Schedule</string>
     <string name="menu_registro">Applicant Registration</string>
 
-    <!-- Registro Screen -->
+    <!-- Registration Screen -->
     <string name="registro_title">Enrollment Form</string>
     <string name="lbl_nombre">Full Name</string>
     <string name="lbl_dni">ID / Passport</string>
@@ -23,6 +23,10 @@
     <string name="btn_enviar_registro">Submit Registration</string>
     <string name="msg_registro_exitoso">Registration submitted successfully! Check your email.</string>
     <string name="error_campos_vacios">Please complete all fields.</string>
+    <string name="error_dni_longitud">ID must have 8 digits</string>
+    <string name="dni_digit_count">%1$d/8 digits</string>
+    <string name="modalidad_admision">Admission Modality</string>
+    <string name="carrera_postular">Major to Apply</string>
 
     <!-- Buttons and Search -->
     <string name="btn_inscribirse">Enroll Now</string>
@@ -31,7 +35,7 @@
     <string name="faq_title">Frequently Asked Questions</string>
     <string name="cronograma_title">Important Dates</string>
 
-    <!-- Inicio Screen -->
+    <!-- Home Screen -->
     <string name="welcome_title">San Marcos Admission</string>
     <string name="welcome_subtitle">Your future begins at the Dean of America.</string>
     <string name="section_quick_access">Quick Access</string>
@@ -43,16 +47,74 @@
     <string name="msg_empty">No information available at this time.</string>
     <string name="btn_retry">Retry</string>
 
+    <!-- Home Screen - Hardcoded strings -->
+    <string name="btn_inscripcion_modalidades">Enrollment and Modalities 2027-I</string>
+    <string name="section_comunicados">Announcements and News</string>
+    <string name="quick_cronograma">Schedule</string>
+    <string name="quick_cronograma_subtitle">Key dates</string>
+    <string name="quick_carreras">Majors</string>
+    <string name="quick_carreras_subtitle">2027 Catalog</string>
+    <string name="quick_sedes">UNMSM Locations</string>
+    <string name="quick_sedes_subtitle">Map location</string>
+    <string name="quick_faq">Help &amp; FAQ</string>
+    <string name="quick_faq_subtitle">Guide questions</string>
+
     <!-- Details -->
     <string name="lbl_duracion">Duration:</string>
     <string name="lbl_perfil">Graduate Profile:</string>
     <string name="btn_ver_plan">View Curriculum</string>
 
-    <!-- Configuración -->
+    <!-- Career Detail -->
+    <string name="modalidad_admision_tag">Admission Modality</string>
+    <string name="carrera_universitaria_tag">University Major</string>
+    <string name="descripcion_requisitos">Description and Requirements:</string>
+
+    <!-- Services Screen -->
+    <string name="tab_modalidades">Admission Modalities</string>
+    <string name="tab_carreras">Professional Majors</string>
+    <string name="medios_ingreso_title">UNMSM Admission Pathways</string>
+    <string name="medios_ingreso_subtitle">Select the modality to view requirements and enroll for the exam.</string>
+    <string name="ver_detalles_inscribirse">View details and enroll</string>
+    <string name="ver_perfil_academico">View academic profile →</string>
+    <string name="buscar_carrera_hint">Search major (Medicine, Systems, Law...)</string>
+
+    <!-- Settings -->
     <string name="settings_title">Settings</string>
     <string name="settings_dark_mode">Dark Mode</string>
     <string name="settings_language">Language</string>
     <string name="lang_spanish">Spanish</string>
     <string name="lang_english">English</string>
     <string name="dialog_select_language">Select Language</string>
+    <string name="btn_cerrar">Close</string>
+
+    <!-- About Us -->
+    <string name="nuestra_identidad">Our Identity</string>
+    <string name="section_mision">Mission</string>
+    <string name="section_vision">Vision</string>
+    <string name="section_historia">Our History</string>
+
+    <!-- Social Networks -->
+    <string name="redes_title">Connect with us</string>
+
+    <!-- Phone Directory -->
+    <string name="directorio_title">Phone Directory</string>
+    <string name="content_desc_enviar_correo">Send Email</string>
+    <string name="content_desc_llamar">Call</string>
+
+    <!-- Locate -->
+    <string name="sedes_title">UNMSM Locations</string>
+    <string name="btn_abrir_maps">Open in Google Maps</string>
+
+    <!-- News -->
+    <string name="btn_leer_mas">Read more</string>
+    <string name="noticia_title">News</string>
+    <string name="info_adicional_noticia">For more information, applicants can visit the central admission office or contact through the official channels available.</string>
+
+    <!-- Navigation -->
+    <string name="content_desc_menu">Menu</string>
+    <string name="content_desc_volver">Go back</string>
+
+    <!-- Errors and states -->
+    <string name="inscripcion_exitosa">Enrollment Successful!</string>
+    <string name="btn_ok">OK</string>
 </resources>

@@ -10,6 +10,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.*
+import com.UniversidadSanMarcos.catalogo.R
 import com.UniversidadSanMarcos.catalogo.ui.screens.*
 import com.UniversidadSanMarcos.catalogo.viewmodel.ThemeViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -60,7 +61,7 @@ fun AppNavigation(themeViewModel: ThemeViewModel = viewModel()) {
                         },
                         navigationIcon = {
                             IconButton(onClick = { scope.launch { drawerState.open() } }) {
-                                Icon(Icons.Default.Menu, contentDescription = "Menu")
+                                Icon(Icons.Default.Menu, contentDescription = stringResource(id = R.string.content_desc_menu))
                             }
                         }
                     )

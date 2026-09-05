@@ -15,10 +15,12 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.UniversidadSanMarcos.catalogo.R
 import com.UniversidadSanMarcos.catalogo.data.repository.LocationData
 import com.UniversidadSanMarcos.catalogo.util.SafeIntentLauncher
 import com.UniversidadSanMarcos.catalogo.viewmodel.LocalizarViewModel
@@ -34,7 +36,7 @@ fun LocalizarScreen(viewModel: LocalizarViewModel = viewModel()) {
             .padding(16.dp)
     ) {
         Text(
-            text = "Sedes UNMSM",
+            text = stringResource(id = R.string.sedes_title),
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary,
@@ -106,7 +108,7 @@ fun LocationCard(
             ) {
                 Icon(Icons.Default.Map, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Abrir en Google Maps")
+                Text(stringResource(id = R.string.btn_abrir_maps))
             }
         }
     }

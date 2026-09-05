@@ -61,7 +61,10 @@ class RegistroViewModel : ViewModel() {
     }
 
     fun onDniChange(value: String) {
-        _dni.value = value
+        val numericOnly = value.filter { it.isDigit() }
+        if (numericOnly.length <= 8) {
+            _dni.value = numericOnly
+        }
     }
 
     fun onEmailChange(value: String) {
@@ -79,6 +82,11 @@ class RegistroViewModel : ViewModel() {
     fun enviarRegistro() {
         if (_nombre.value.isBlank() || _dni.value.isBlank() || _email.value.isBlank() || _carreraSeleccionada.value.isBlank()) {
             _uiState.value = RegistroUiState.Error("Por favor completa todos los campos requeridos")
+            return
+        }
+
+        if (_dni.value.length < 8) {
+            _uiState.value = RegistroUiState.Error("El DNI debe tener 8 dígitos")
             return
         }
 
