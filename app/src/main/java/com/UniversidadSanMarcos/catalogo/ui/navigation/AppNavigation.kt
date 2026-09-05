@@ -42,7 +42,7 @@ fun AppNavigation(themeViewModel: ThemeViewModel = viewModel()) {
                 onNavigate = { route ->
                     scope.launch { drawerState.close() }
                     navController.navigate(route) {
-                        popUpTo(navController.graph.startDestinationId) {
+                        popUpTo(Screen.Inicio.route) {
                             saveState = true
                         }
                         launchSingleTop = true
